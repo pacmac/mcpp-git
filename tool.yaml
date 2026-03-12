@@ -1,0 +1,201 @@
+name: git
+scope: local
+about: "Git version control operations: checkpoint, commit, push, diff, log, file history and ownership tracking."
+
+tools:
+  # ── Git versioning ──
+
+  - name: dev_checkpoint
+    description: "Save current state as a checkpoint. Captures all uncommitted changes with an automatic or custom message."
+    inputSchema:
+      type: object
+      properties:
+        message:
+          type: string
+          description: "Optional checkpoint message (auto-generated from active step if omitted)"
+        project:
+          type: string
+          description: "Project name"
+        task:
+          type: string
+          description: "Active task name"
+        step:
+          type: integer
+          description: "Active step number"
+        user:
+          type: string
+          description: "User identifier (defaults to OS username if omitted)"
+
+  - name: dev_commit
+    description: "Save changes with a meaningful message. Use for completed work you want to keep."
+    inputSchema:
+      type: object
+      properties:
+        message:
+          type: string
+          description: "Commit message describing the changes"
+        project:
+          type: string
+          description: "Project name"
+        task:
+          type: string
+          description: "Active task name"
+        step:
+          type: integer
+          description: "Active step number"
+        user:
+          type: string
+          description: "User identifier (defaults to OS username if omitted)"
+      required:
+        - message
+
+  - name: dev_push
+    description: "Share saved changes with other users. Pulls latest changes first, then pushes."
+    inputSchema:
+      type: object
+      properties: {}
+
+  - name: dev_sync
+    description: "Merge your worktree branch into main and push. Only available when enable_worktrees is true."
+    inputSchema:
+      type: object
+      properties: {}
+
+  - name: dev_file_restore
+    description: "Restore a single file from a specific commit. One file per call — use dev_log to find the commit, then restore individual files. Blocks if the file belongs to another user."
+    inputSchema:
+      type: object
+      properties:
+        sha:
+          type: string
+          description: "The commit SHA to restore from (from dev_log output)"
+        file:
+          type: string
+          description: "Path of the file to restore (relative to project root)"
+        project:
+          type: string
+          description: "Project name"
+        task:
+          type: string
+          description: "Active task name"
+        step:
+          type: integer
+          description: "Active step number"
+        user:
+          type: string
+          description: "User identifier (defaults to OS username if omitted)"
+      required:
+        - sha
+        - file
+
+  - name: dev_log
+    description: "Show history of saved checkpoints and commits. Defaults to current user and active task."
+    inputSchema:
+      type: object
+      properties:
+        user:
+          type: string
+          description: "Filter by user (omit for current user)"
+        task:
+          type: string
+          description: "Filter by task name (omit for active task)"
+        step:
+          type: integer
+          description: "Filter by step number"
+        show_all:
+          type: boolean
+          description: "Show all users and tasks (default: false)"
+        max_count:
+          type: integer
+          description: "Maximum number of entries (default: 50)"
+
+  - name: dev_status
+    description: "Show uncommitted changes and which user last modified each file."
+    inputSchema:
+      type: object
+      properties: {}
+
+  - name: dev_diff
+    description: "Show what changed since last checkpoint, or between two specific points."
+    inputSchema:
+      type: object
+      properties:
+        from:
+          type: string
+          description: "Starting checkpoint ID (omit for last checkpoint)"
+        to:
+          type: string
+          description: "Ending checkpoint ID (omit for current working state)"
+
+  - name: dev_show
+    description: "Show full details of a specific commit: author, date, message, and diff. Read-only."
+    inputSchema:
+      type: object
+      properties:
+        sha:
+          type: string
+          description: "The commit SHA to inspect"
+      required:
+        - sha
+
+  - name: dev_file_history
+    description: "Show line-by-line authorship of a file (who last modified each line and when). Read-only."
+    inputSchema:
+      type: object
+      properties:
+        file:
+          type: string
+          description: "Path of the file (relative to project root)"
+      required:
+        - file
+
+  - name: dev_file_owner
+    description: "Show who last modified a file. Checks per-file metadata first, falls back to commit-level author. Read-only."
+    inputSchema:
+      type: object
+      properties:
+        file:
+          type: string
+          description: "Path of the file (relative to project root)"
+      required:
+        - file
+
+  # ── Search ──
+
+  - name: dev_search
+    description: "Search file contents for a pattern. Fast — uses grep -r, not find -exec. Excludes .git, node_modules, __pycache__."
+    inputSchema:
+      type: object
+      properties:
+        pattern:
+          type: string
+          description: "Search pattern (grep regex)"
+        include:
+          type: string
+          description: "File glob filter, e.g. '*.js' or '*.py'"
+        max_count:
+          type: integer
+          description: "Maximum results to return (default: 200)"
+        context:
+          type: integer
+          description: "Lines of context around each match (default: 0)"
+        ignore_case:
+          type: boolean
+          description: "Case-insensitive search (default: false)"
+      required:
+        - pattern
+
+  - name: dev_find
+    description: "Find files by name pattern or extension. Uses git ls-files — instant, only returns tracked files."
+    inputSchema:
+      type: object
+      properties:
+        pattern:
+          type: string
+          description: "Filename glob pattern, e.g. '*.js' or 'config*'"
+        extension:
+          type: string
+          description: "File extension filter, e.g. 'js' or '.py'"
+        max_count:
+          type: integer
+          description: "Maximum results to return (default: 500)"
