@@ -269,6 +269,12 @@ def add_file(cwd: str | Path, filepath: str) -> None:
     _run(["add", "--", filepath], cwd)
 
 
+def is_staged(cwd: str | Path, filepath: str) -> bool:
+    """Return True if filepath has staged changes (index differs from HEAD)."""
+    result = _run(["diff", "--cached", "--quiet", "--", filepath], cwd, check=False)
+    return result.returncode != 0
+
+
 def file_commit_count(cwd: str | Path, filepath: str) -> int:
     """Count how many commits have touched a file. Returns 0 for untracked files."""
     result = _run(["rev-list", "--count", "HEAD", "--", filepath], cwd, check=False)

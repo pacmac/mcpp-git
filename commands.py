@@ -77,6 +77,8 @@ class GitCommands:
             filepath = item["path"]
             ver = git.file_commit_count(git_dir, filepath) + 1
             git.add_file(git_dir, filepath)
+            if not git.is_staged(git_dir, filepath):
+                continue  # gitlink with unchanged SHA or already-clean entry
             # Per-file tag carries ver and notes; sid filled after commit
             file_tag = git.McppTag(
                 ver=str(ver),
