@@ -656,3 +656,305 @@ node-dash [mcpp:ver=23,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-
 2026-06-29 10:28:27,277 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v3
 2026-06-29 10:28:27,279 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v3 completed in 0.0s (rc=0)
 2026-06-29 10:28:27,279 841080 DEBUG mcpp_git.tool RESULT dev_commit success=True
+2026-06-29 11:06:46,468 841080 DEBUG mcpp_git.tool CALL dev_commit args={'message': 'fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver', 'task': 'messages-audit-fixes', 'step': 7}
+2026-06-29 11:06:46,469 841080 DEBUG mcpp_git running: git status --porcelain
+2026-06-29 11:06:46,509 841080 DEBUG mcpp_git git status --porcelain completed in 0.0s (rc=0)
+2026-06-29 11:06:46,509 841080 DEBUG mcpp_git running: git status --porcelain
+2026-06-29 11:06:46,553 841080 DEBUG mcpp_git git status --porcelain completed in 0.0s (rc=0)
+2026-06-29 11:06:46,553 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .off/mesh-rest-bridge
+2026-06-29 11:06:46,565 841080 DEBUG mcpp_git git rev-list --count HEAD -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:06:46,566 841080 DEBUG mcpp_git running: git add -- .off/mesh-rest-bridge
+2026-06-29 11:06:46,570 841080 DEBUG mcpp_git git add -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:06:46,570 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .off/mesh-rest-bridge
+2026-06-29 11:06:46,572 841080 DEBUG mcpp_git git diff --cached --quiet -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:06:46,572 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:06:46,583 841080 DEBUG mcpp_git git rev-list --count HEAD -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,583 841080 DEBUG mcpp_git running: git add -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:06:46,587 841080 DEBUG mcpp_git git add -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,587 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:06:46,589 841080 DEBUG mcpp_git git diff --cached --quiet -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,590 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- docs/AUDIT-260628A.md
+2026-06-29 11:06:46,600 841080 DEBUG mcpp_git git rev-list --count HEAD -- docs/AUDIT-260628A.md completed in 0.0s (rc=0)
+2026-06-29 11:06:46,600 841080 DEBUG mcpp_git running: git add -- docs/AUDIT-260628A.md
+2026-06-29 11:06:46,603 841080 DEBUG mcpp_git git add -- docs/AUDIT-260628A.md completed in 0.0s (rc=0)
+2026-06-29 11:06:46,603 841080 DEBUG mcpp_git running: git diff --cached --quiet -- docs/AUDIT-260628A.md
+2026-06-29 11:06:46,605 841080 DEBUG mcpp_git git diff --cached --quiet -- docs/AUDIT-260628A.md completed in 0.0s (rc=1)
+2026-06-29 11:06:46,606 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+docs/AUDIT-260628A.md [mcpp:ver=13,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:06:46,618 841080 DEBUG mcpp_git git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+docs/AUDIT-260628A.md [mcpp:ver=13,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:06:46,618 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:06:46,619 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:06:46,619 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- docs/manifest.yaml
+2026-06-29 11:06:46,631 841080 DEBUG mcpp_git git rev-list --count HEAD -- docs/manifest.yaml completed in 0.0s (rc=0)
+2026-06-29 11:06:46,631 841080 DEBUG mcpp_git running: git add -- docs/manifest.yaml
+2026-06-29 11:06:46,634 841080 DEBUG mcpp_git git add -- docs/manifest.yaml completed in 0.0s (rc=0)
+2026-06-29 11:06:46,634 841080 DEBUG mcpp_git running: git diff --cached --quiet -- docs/manifest.yaml
+2026-06-29 11:06:46,637 841080 DEBUG mcpp_git git diff --cached --quiet -- docs/manifest.yaml completed in 0.0s (rc=1)
+2026-06-29 11:06:46,638 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+docs/manifest.yaml [mcpp:ver=36,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:06:46,647 841080 DEBUG mcpp_git git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+docs/manifest.yaml [mcpp:ver=36,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:06:46,647 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:06:46,648 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:06:46,649 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- esp32-unified-ota
+2026-06-29 11:06:46,658 841080 DEBUG mcpp_git git rev-list --count HEAD -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:06:46,658 841080 DEBUG mcpp_git running: git add -- esp32-unified-ota
+2026-06-29 11:06:46,661 841080 DEBUG mcpp_git git add -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:06:46,662 841080 DEBUG mcpp_git running: git diff --cached --quiet -- esp32-unified-ota
+2026-06-29 11:06:46,663 841080 DEBUG mcpp_git git diff --cached --quiet -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:06:46,664 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- firmware/src
+2026-06-29 11:06:46,674 841080 DEBUG mcpp_git git rev-list --count HEAD -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:06:46,674 841080 DEBUG mcpp_git running: git add -- firmware/src
+2026-06-29 11:06:46,681 841080 DEBUG mcpp_git git add -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:06:46,681 841080 DEBUG mcpp_git running: git diff --cached --quiet -- firmware/src
+2026-06-29 11:06:46,683 841080 DEBUG mcpp_git git diff --cached --quiet -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:06:46,683 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- node-dash
+2026-06-29 11:06:46,694 841080 DEBUG mcpp_git git rev-list --count HEAD -- node-dash completed in 0.0s (rc=0)
+2026-06-29 11:06:46,694 841080 DEBUG mcpp_git running: git add -- node-dash
+2026-06-29 11:06:46,696 841080 DEBUG mcpp_git git add -- node-dash completed in 0.0s (rc=0)
+2026-06-29 11:06:46,696 841080 DEBUG mcpp_git running: git diff --cached --quiet -- node-dash
+2026-06-29 11:06:46,698 841080 DEBUG mcpp_git git diff --cached --quiet -- node-dash completed in 0.0s (rc=1)
+2026-06-29 11:06:46,698 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+node-dash [mcpp:ver=24,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:06:46,705 841080 DEBUG mcpp_git git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+node-dash [mcpp:ver=24,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:06:46,705 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:06:46,707 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:06:46,707 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- rotator/v0
+2026-06-29 11:06:46,716 841080 DEBUG mcpp_git git rev-list --count HEAD -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,716 841080 DEBUG mcpp_git running: git add -- rotator/v0
+2026-06-29 11:06:46,725 841080 DEBUG mcpp_git git add -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,725 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v0
+2026-06-29 11:06:46,728 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,728 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- rotator/v3
+2026-06-29 11:06:46,738 841080 DEBUG mcpp_git git rev-list --count HEAD -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,738 841080 DEBUG mcpp_git running: git add -- rotator/v3
+2026-06-29 11:06:46,742 841080 DEBUG mcpp_git git add -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,742 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v3
+2026-06-29 11:06:46,744 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:06:46,745 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .work/audit-results/
+2026-06-29 11:06:46,754 841080 DEBUG mcpp_git git rev-list --count HEAD -- .work/audit-results/ completed in 0.0s (rc=0)
+2026-06-29 11:06:46,754 841080 DEBUG mcpp_git running: git add -- .work/audit-results/
+2026-06-29 11:06:46,757 841080 DEBUG mcpp_git git add -- .work/audit-results/ completed in 0.0s (rc=0)
+2026-06-29 11:06:46,757 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .work/audit-results/
+2026-06-29 11:06:46,759 841080 DEBUG mcpp_git git diff --cached --quiet -- .work/audit-results/ completed in 0.0s (rc=1)
+2026-06-29 11:06:46,759 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+.work/audit-results/ [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:06:46,766 841080 DEBUG mcpp_git git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+.work/audit-results/ [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:06:46,766 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:06:46,767 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:06:46,767 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- scripts/
+2026-06-29 11:06:46,777 841080 DEBUG mcpp_git git rev-list --count HEAD -- scripts/ completed in 0.0s (rc=0)
+2026-06-29 11:06:46,777 841080 DEBUG mcpp_git running: git add -- scripts/
+2026-06-29 11:06:46,780 841080 DEBUG mcpp_git git add -- scripts/ completed in 0.0s (rc=0)
+2026-06-29 11:06:46,780 841080 DEBUG mcpp_git running: git diff --cached --quiet -- scripts/
+2026-06-29 11:06:46,782 841080 DEBUG mcpp_git git diff --cached --quiet -- scripts/ completed in 0.0s (rc=1)
+2026-06-29 11:06:46,783 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+scripts/ [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:06:46,791 841080 DEBUG mcpp_git git commit -m fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver
+
+scripts/ [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): replace MAC-suffix num inference in ownDeviceNums() with live resolver]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:06:46,791 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:06:46,792 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:06:46,793 841080 DEBUG mcpp_git.tool RESULT dev_commit success=True
+2026-06-29 11:13:17,350 841080 DEBUG mcpp_git.tool CALL dev_commit args={'message': 'fix(MSG-002): persist node_id↔MAC mapping to survive process restarts', 'task': 'messages-audit-fixes', 'step': 7}
+2026-06-29 11:13:17,350 841080 DEBUG mcpp_git running: git status --porcelain
+2026-06-29 11:13:17,389 841080 DEBUG mcpp_git git status --porcelain completed in 0.0s (rc=0)
+2026-06-29 11:13:17,389 841080 DEBUG mcpp_git running: git status --porcelain
+2026-06-29 11:13:17,422 841080 DEBUG mcpp_git git status --porcelain completed in 0.0s (rc=0)
+2026-06-29 11:13:17,422 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .off/mesh-rest-bridge
+2026-06-29 11:13:17,431 841080 DEBUG mcpp_git git rev-list --count HEAD -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:13:17,431 841080 DEBUG mcpp_git running: git add -- .off/mesh-rest-bridge
+2026-06-29 11:13:17,436 841080 DEBUG mcpp_git git add -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:13:17,436 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .off/mesh-rest-bridge
+2026-06-29 11:13:17,438 841080 DEBUG mcpp_git git diff --cached --quiet -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:13:17,438 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:13:17,448 841080 DEBUG mcpp_git git rev-list --count HEAD -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,448 841080 DEBUG mcpp_git running: git add -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:13:17,456 841080 DEBUG mcpp_git git add -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,456 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:13:17,458 841080 DEBUG mcpp_git git diff --cached --quiet -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,459 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- esp32-unified-ota
+2026-06-29 11:13:17,469 841080 DEBUG mcpp_git git rev-list --count HEAD -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:13:17,469 841080 DEBUG mcpp_git running: git add -- esp32-unified-ota
+2026-06-29 11:13:17,473 841080 DEBUG mcpp_git git add -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:13:17,473 841080 DEBUG mcpp_git running: git diff --cached --quiet -- esp32-unified-ota
+2026-06-29 11:13:17,475 841080 DEBUG mcpp_git git diff --cached --quiet -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:13:17,475 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- firmware/src
+2026-06-29 11:13:17,484 841080 DEBUG mcpp_git git rev-list --count HEAD -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:13:17,484 841080 DEBUG mcpp_git running: git add -- firmware/src
+2026-06-29 11:13:17,491 841080 DEBUG mcpp_git git add -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:13:17,491 841080 DEBUG mcpp_git running: git diff --cached --quiet -- firmware/src
+2026-06-29 11:13:17,493 841080 DEBUG mcpp_git git diff --cached --quiet -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:13:17,493 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- node-dash
+2026-06-29 11:13:17,504 841080 DEBUG mcpp_git git rev-list --count HEAD -- node-dash completed in 0.0s (rc=0)
+2026-06-29 11:13:17,504 841080 DEBUG mcpp_git running: git add -- node-dash
+2026-06-29 11:13:17,507 841080 DEBUG mcpp_git git add -- node-dash completed in 0.0s (rc=0)
+2026-06-29 11:13:17,507 841080 DEBUG mcpp_git running: git diff --cached --quiet -- node-dash
+2026-06-29 11:13:17,509 841080 DEBUG mcpp_git git diff --cached --quiet -- node-dash completed in 0.0s (rc=1)
+2026-06-29 11:13:17,509 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): persist node_id↔MAC mapping to survive process restarts
+
+node-dash [mcpp:ver=25,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): persist node_id↔MAC mapping to survive process restarts]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:13:17,522 841080 DEBUG mcpp_git git commit -m fix(MSG-002): persist node_id↔MAC mapping to survive process restarts
+
+node-dash [mcpp:ver=25,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): persist node_id↔MAC mapping to survive process restarts]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:13:17,522 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:13:17,524 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:13:17,525 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- rotator/v0
+2026-06-29 11:13:17,535 841080 DEBUG mcpp_git git rev-list --count HEAD -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,535 841080 DEBUG mcpp_git running: git add -- rotator/v0
+2026-06-29 11:13:17,541 841080 DEBUG mcpp_git git add -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,542 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v0
+2026-06-29 11:13:17,543 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,544 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- rotator/v3
+2026-06-29 11:13:17,555 841080 DEBUG mcpp_git git rev-list --count HEAD -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,555 841080 DEBUG mcpp_git running: git add -- rotator/v3
+2026-06-29 11:13:17,561 841080 DEBUG mcpp_git git add -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,562 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v3
+2026-06-29 11:13:17,564 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:13:17,565 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .work/audit-results/MSG-002-20260629T100914Z.json
+2026-06-29 11:13:17,577 841080 DEBUG mcpp_git git rev-list --count HEAD -- .work/audit-results/MSG-002-20260629T100914Z.json completed in 0.0s (rc=0)
+2026-06-29 11:13:17,577 841080 DEBUG mcpp_git running: git add -- .work/audit-results/MSG-002-20260629T100914Z.json
+2026-06-29 11:13:17,585 841080 DEBUG mcpp_git git add -- .work/audit-results/MSG-002-20260629T100914Z.json completed in 0.0s (rc=0)
+2026-06-29 11:13:17,585 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .work/audit-results/MSG-002-20260629T100914Z.json
+2026-06-29 11:13:17,588 841080 DEBUG mcpp_git git diff --cached --quiet -- .work/audit-results/MSG-002-20260629T100914Z.json completed in 0.0s (rc=1)
+2026-06-29 11:13:17,588 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): persist node_id↔MAC mapping to survive process restarts
+
+.work/audit-results/MSG-002-20260629T100914Z.json [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): persist node_id↔MAC mapping to survive process restarts]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:13:17,596 841080 DEBUG mcpp_git git commit -m fix(MSG-002): persist node_id↔MAC mapping to survive process restarts
+
+.work/audit-results/MSG-002-20260629T100914Z.json [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): persist node_id↔MAC mapping to survive process restarts]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:13:17,596 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:13:17,599 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:13:17,599 841080 DEBUG mcpp_git.tool RESULT dev_commit success=True
+2026-06-29 11:18:08,527 841080 DEBUG mcpp_git.tool CALL dev_commit args={'message': 'fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity', 'task': 'messages-audit-fixes', 'step': 7}
+2026-06-29 11:18:08,527 841080 DEBUG mcpp_git running: git status --porcelain
+2026-06-29 11:18:08,570 841080 DEBUG mcpp_git git status --porcelain completed in 0.0s (rc=0)
+2026-06-29 11:18:08,570 841080 DEBUG mcpp_git running: git status --porcelain
+2026-06-29 11:18:08,605 841080 DEBUG mcpp_git git status --porcelain completed in 0.0s (rc=0)
+2026-06-29 11:18:08,605 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .off/mesh-rest-bridge
+2026-06-29 11:18:08,617 841080 DEBUG mcpp_git git rev-list --count HEAD -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:18:08,618 841080 DEBUG mcpp_git running: git add -- .off/mesh-rest-bridge
+2026-06-29 11:18:08,623 841080 DEBUG mcpp_git git add -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:18:08,623 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .off/mesh-rest-bridge
+2026-06-29 11:18:08,625 841080 DEBUG mcpp_git git diff --cached --quiet -- .off/mesh-rest-bridge completed in 0.0s (rc=0)
+2026-06-29 11:18:08,625 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:18:08,636 841080 DEBUG mcpp_git git rev-list --count HEAD -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,636 841080 DEBUG mcpp_git running: git add -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:18:08,641 841080 DEBUG mcpp_git git add -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,641 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .off/mesh-rest-bridge-backup-20260615
+2026-06-29 11:18:08,643 841080 DEBUG mcpp_git git diff --cached --quiet -- .off/mesh-rest-bridge-backup-20260615 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,643 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- esp32-unified-ota
+2026-06-29 11:18:08,655 841080 DEBUG mcpp_git git rev-list --count HEAD -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:18:08,655 841080 DEBUG mcpp_git running: git add -- esp32-unified-ota
+2026-06-29 11:18:08,659 841080 DEBUG mcpp_git git add -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:18:08,659 841080 DEBUG mcpp_git running: git diff --cached --quiet -- esp32-unified-ota
+2026-06-29 11:18:08,661 841080 DEBUG mcpp_git git diff --cached --quiet -- esp32-unified-ota completed in 0.0s (rc=0)
+2026-06-29 11:18:08,661 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- firmware/src
+2026-06-29 11:18:08,673 841080 DEBUG mcpp_git git rev-list --count HEAD -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:18:08,674 841080 DEBUG mcpp_git running: git add -- firmware/src
+2026-06-29 11:18:08,681 841080 DEBUG mcpp_git git add -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:18:08,681 841080 DEBUG mcpp_git running: git diff --cached --quiet -- firmware/src
+2026-06-29 11:18:08,684 841080 DEBUG mcpp_git git diff --cached --quiet -- firmware/src completed in 0.0s (rc=0)
+2026-06-29 11:18:08,684 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- node-dash
+2026-06-29 11:18:08,695 841080 DEBUG mcpp_git git rev-list --count HEAD -- node-dash completed in 0.0s (rc=0)
+2026-06-29 11:18:08,695 841080 DEBUG mcpp_git running: git add -- node-dash
+2026-06-29 11:18:08,698 841080 DEBUG mcpp_git git add -- node-dash completed in 0.0s (rc=0)
+2026-06-29 11:18:08,698 841080 DEBUG mcpp_git running: git diff --cached --quiet -- node-dash
+2026-06-29 11:18:08,701 841080 DEBUG mcpp_git git diff --cached --quiet -- node-dash completed in 0.0s (rc=1)
+2026-06-29 11:18:08,701 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+node-dash [mcpp:ver=26,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:18:08,709 841080 DEBUG mcpp_git git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+node-dash [mcpp:ver=26,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:18:08,709 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:18:08,710 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:18:08,710 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- rotator/v0
+2026-06-29 11:18:08,721 841080 DEBUG mcpp_git git rev-list --count HEAD -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,721 841080 DEBUG mcpp_git running: git add -- rotator/v0
+2026-06-29 11:18:08,729 841080 DEBUG mcpp_git git add -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,729 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v0
+2026-06-29 11:18:08,732 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v0 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,732 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- rotator/v3
+2026-06-29 11:18:08,743 841080 DEBUG mcpp_git git rev-list --count HEAD -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,743 841080 DEBUG mcpp_git running: git add -- rotator/v3
+2026-06-29 11:18:08,748 841080 DEBUG mcpp_git git add -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,749 841080 DEBUG mcpp_git running: git diff --cached --quiet -- rotator/v3
+2026-06-29 11:18:08,752 841080 DEBUG mcpp_git git diff --cached --quiet -- rotator/v3 completed in 0.0s (rc=0)
+2026-06-29 11:18:08,752 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- scripts/audit_ref.py
+2026-06-29 11:18:08,762 841080 DEBUG mcpp_git git rev-list --count HEAD -- scripts/audit_ref.py completed in 0.0s (rc=0)
+2026-06-29 11:18:08,762 841080 DEBUG mcpp_git running: git add -- scripts/audit_ref.py
+2026-06-29 11:18:08,765 841080 DEBUG mcpp_git git add -- scripts/audit_ref.py completed in 0.0s (rc=0)
+2026-06-29 11:18:08,765 841080 DEBUG mcpp_git running: git diff --cached --quiet -- scripts/audit_ref.py
+2026-06-29 11:18:08,767 841080 DEBUG mcpp_git git diff --cached --quiet -- scripts/audit_ref.py completed in 0.0s (rc=1)
+2026-06-29 11:18:08,767 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+scripts/audit_ref.py [mcpp:ver=2,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:18:08,775 841080 DEBUG mcpp_git git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+scripts/audit_ref.py [mcpp:ver=2,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:18:08,775 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:18:08,776 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:18:08,777 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- scripts/test_audit_ref.py
+2026-06-29 11:18:08,790 841080 DEBUG mcpp_git git rev-list --count HEAD -- scripts/test_audit_ref.py completed in 0.0s (rc=0)
+2026-06-29 11:18:08,790 841080 DEBUG mcpp_git running: git add -- scripts/test_audit_ref.py
+2026-06-29 11:18:08,794 841080 DEBUG mcpp_git git add -- scripts/test_audit_ref.py completed in 0.0s (rc=0)
+2026-06-29 11:18:08,794 841080 DEBUG mcpp_git running: git diff --cached --quiet -- scripts/test_audit_ref.py
+2026-06-29 11:18:08,796 841080 DEBUG mcpp_git git diff --cached --quiet -- scripts/test_audit_ref.py completed in 0.0s (rc=1)
+2026-06-29 11:18:08,796 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+scripts/test_audit_ref.py [mcpp:ver=2,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:18:08,804 841080 DEBUG mcpp_git git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+scripts/test_audit_ref.py [mcpp:ver=2,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:18:08,804 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:18:08,806 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:18:08,806 841080 DEBUG mcpp_git running: git rev-list --count HEAD -- .work/audit-results/MSG-002-20260629T101528Z.json
+2026-06-29 11:18:08,817 841080 DEBUG mcpp_git git rev-list --count HEAD -- .work/audit-results/MSG-002-20260629T101528Z.json completed in 0.0s (rc=0)
+2026-06-29 11:18:08,817 841080 DEBUG mcpp_git running: git add -- .work/audit-results/MSG-002-20260629T101528Z.json
+2026-06-29 11:18:08,821 841080 DEBUG mcpp_git git add -- .work/audit-results/MSG-002-20260629T101528Z.json completed in 0.0s (rc=0)
+2026-06-29 11:18:08,821 841080 DEBUG mcpp_git running: git diff --cached --quiet -- .work/audit-results/MSG-002-20260629T101528Z.json
+2026-06-29 11:18:08,823 841080 DEBUG mcpp_git git diff --cached --quiet -- .work/audit-results/MSG-002-20260629T101528Z.json completed in 0.0s (rc=1)
+2026-06-29 11:18:08,823 841080 DEBUG mcpp_git running: git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+.work/audit-results/MSG-002-20260629T101528Z.json [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7]
+2026-06-29 11:18:08,830 841080 DEBUG mcpp_git git commit -m fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity
+
+.work/audit-results/MSG-002-20260629T101528Z.json [mcpp:ver=1,user=root,task=messages-audit-fixes,step=7,notes=fix(MSG-002): key persisted node_mac entries by MAC for structural bijectivity]
+[mcpp:user=root,task=messages-audit-fixes,step=7] completed in 0.0s (rc=0)
+2026-06-29 11:18:08,830 841080 DEBUG mcpp_git running: git rev-parse HEAD
+2026-06-29 11:18:08,832 841080 DEBUG mcpp_git git rev-parse HEAD completed in 0.0s (rc=0)
+2026-06-29 11:18:08,832 841080 DEBUG mcpp_git.tool RESULT dev_commit success=True
