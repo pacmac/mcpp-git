@@ -64,7 +64,7 @@ def _get_commands():
 
 def execute(tool_name: str, arguments: dict[str, Any], context: dict[str, Any] | None = None) -> dict[str, Any]:
     """Execute a git tool command via MCP interface."""
-    workspace_dir = (context or {}).get("workspace_dir", ".")
+    workspace_dir = arguments.pop("workspace_dir", None) or (context or {}).get("workspace_dir", ".")
     _ensure_file_logging()
     _tool_log.debug("CALL %s args=%s", tool_name, arguments)
 
