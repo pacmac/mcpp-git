@@ -25,6 +25,9 @@ tools:
         user:
           type: string
           description: "User identifier (defaults to OS username if omitted)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default — use for submodule commits)"
 
   - name: dev_commit
     description: "Save changes with a meaningful message. Use for completed work you want to keep."
@@ -46,6 +49,9 @@ tools:
         user:
           type: string
           description: "User identifier (defaults to OS username if omitted)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default — use for submodule commits)"
       required:
         - message
 
@@ -84,6 +90,9 @@ tools:
         user:
           type: string
           description: "User identifier (defaults to OS username if omitted)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
       required:
         - sha
         - file
@@ -108,12 +117,18 @@ tools:
         max_count:
           type: integer
           description: "Maximum number of entries (default: 50)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
 
   - name: dev_status
     description: "Show uncommitted changes and which user last modified each file."
     inputSchema:
       type: object
-      properties: {}
+      properties:
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default — use for submodule status)"
 
   - name: dev_diff
     description: "Show what changed since last checkpoint, or between two specific points."
@@ -126,6 +141,9 @@ tools:
         to:
           type: string
           description: "Ending checkpoint ID (omit for current working state)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
 
   - name: dev_show
     description: "Show full details of a specific commit: author, date, message, and diff. Read-only."
@@ -135,6 +153,9 @@ tools:
         sha:
           type: string
           description: "The commit SHA to inspect"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
       required:
         - sha
 
@@ -146,6 +167,9 @@ tools:
         file:
           type: string
           description: "Path of the file (relative to project root)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
       required:
         - file
 
@@ -157,6 +181,9 @@ tools:
         file:
           type: string
           description: "Path of the file (relative to project root)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
       required:
         - file
 
@@ -182,6 +209,9 @@ tools:
         ignore_case:
           type: boolean
           description: "Case-insensitive search (default: false)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
       required:
         - pattern
 
@@ -199,3 +229,6 @@ tools:
         max_count:
           type: integer
           description: "Maximum results to return (default: 500)"
+        workspace_dir:
+          type: string
+          description: "Absolute path to git repo root (omit to use server default)"
